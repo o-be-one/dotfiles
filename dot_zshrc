@@ -11,17 +11,27 @@ source ~/.config/antigen.zsh
 antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
+# https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 antigen bundle git
 antigen bundle pip
 antigen bundle fzf
 antigen bundle command-not-found
+antigen bundle docker
+antigen bundle kubectl
+antigen bundle kubectx
+antigen bundle aws
+
 
 # [BEBIN fzf]
 # Chargez le plugin fzf
 antigen bundle junegunn/fzf
 
 # Chargez le plugin fzf-zsh
-antigen bundle unixorn/fzf-zsh-plugin
+antigen bundle unixorn/fzf-zsh-plugin@main
+antigen bundle docker
+antigen bundle kubectl
+antigen bundle kubectx
+antigen bundle aws
 
 # Configurations personnalisées pour fzf
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --border"
