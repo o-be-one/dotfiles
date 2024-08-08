@@ -1,0 +1,18 @@
+sindresorhus/pure     kind:fpath
+#romkatv/powerlevel10k kind:fpath
+romkatv/powerlevel10k
+
+belak/zsh-utils path:editor
+belak/zsh-utils path:history
+belak/zsh-utils path:utility
+belak/zsh-utils path:completion
+
+zsh-users/zsh-autosuggestions
+
+zdharma-continuum/fast-syntax-highlighting
+
+joshskidmore/zsh-fzf-history-search
+
+Aloxaf/fzf-tab
+
+
