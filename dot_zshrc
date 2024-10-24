@@ -18,3 +18,5 @@ autoload -Uz promptinit && promptinit && prompt powerlevel10k
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 PROJECT_PATHS=(~/git)
+
+zstyle :omz:plugins:ssh-agent identities nurun

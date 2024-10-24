@@ -1,20 +1,17 @@
-#sindresorhus/pure     kind:fpath
+# Load completions. Ref: https://getantidote.github.io/completions
+mattmc3/ez-compinit
+
 romkatv/powerlevel10k kind:fpath
-#romkatv/powerlevel10k
 
 belak/zsh-utils path:editor
 belak/zsh-utils path:history
 belak/zsh-utils path:utility
-
-zsh-users/zsh-completions path:src kind:fpath
 
 zdharma-continuum/fast-syntax-highlighting kind:defer
 
 joshskidmore/zsh-fzf-history-search
 
 Aloxaf/fzf-tab
-
-#unixorn/fzf-zsh-plugin
 
 getantidote/use-omz
 ohmyzsh/ohmyzsh path:plugins/aliases # list all aliases using als
@@ -29,13 +26,22 @@ ohmyzsh/ohmyzsh path:plugins/fzf
 ohmyzsh/ohmyzsh path:plugins/git-commit # helps writing commit like "git fix -s 'router' 'change router address'"
 ohmyzsh/ohmyzsh path:plugins/git
 ohmyzsh/ohmyzsh path:plugins/golang
-ohmyzsh/ohmyzsh path:plugins/pip
+#ohmyzsh/ohmyzsh path:plugins/pip
 #ohmyzsh/ohmyzsh path:plugins/python
 ohmyzsh/ohmyzsh path:plugins/pj
 ohmyzsh/ohmyzsh path:plugins/ssh-agent
 
+# Custom aliases
+~/.aliases.d/*
+~/.aliases
+
+# Custom functions and completions
+~/.zsh_functions.d kind:fpath
+
 # Recommended at the end, after all fpath loaded so it get populated
 belak/zsh-utils path:completion
 
+# Related to issue, ref: https://github.com/mattmc3/antidote/issues/23
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
+zsh-users/zsh-completions path:src kind:fpath
